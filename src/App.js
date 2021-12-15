@@ -1,11 +1,9 @@
+import logo from './logo.svg';
+import './App.css';
+
 import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
-import awsMobile from './aws-exports.js';
-import React from 'react';
-Amplify.configure(awsMobile);
-
 
 function App({ signOut, user }) {
   return (
